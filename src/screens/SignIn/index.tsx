@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Image, Text, StatusBar }  from 'react-native';
+import IllustrationImg from '../../assets/illustration.png';
 
+import { View, Image, Text, StatusBar }  from 'react-native';
 import { styles } from './styles';
 import { ButtonIcon } from '../../components/ButtonIcon';
 
-import IllustrationImg from '../../assets/illustration.png';
 
 export function SignIn() {
 
@@ -35,7 +35,10 @@ export function SignIn() {
         </Text>
       </View>
       
-      <ButtonIcon title='Entrar com o Discord'/>
+      <ButtonIcon 
+        title='Entrar com o Discord'
+        activeOpacity={0.7}
+      />
     </View>
   );
 }
